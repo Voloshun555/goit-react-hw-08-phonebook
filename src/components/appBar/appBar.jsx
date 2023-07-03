@@ -6,7 +6,6 @@ import { useAuth } from 'hooks';
 
 export function AppBar() {
   const { isLoggedIn } = useAuth();
-  console.log(isLoggedIn)
   return (
     <header className={css.header}>
       <Navigation />
