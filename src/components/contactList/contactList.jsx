@@ -13,7 +13,7 @@ export const ContactList = () => {
   const contacts = useSelector(getVisibleContacts);
 
   return (
-    <ul>
+    <ul style={{padding: 0}}>
       {contacts.map(({ name, number, id }) => (
         <li key={id} className={css.list}>
           <p>
